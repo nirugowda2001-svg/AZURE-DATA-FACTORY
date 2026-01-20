@@ -5,17 +5,6 @@
 			"referenceName": "dataprojectDB",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"table": {
-				"type": "string"
-			},
-			"schema": {
-				"type": "string"
-			},
-			"column": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": []
