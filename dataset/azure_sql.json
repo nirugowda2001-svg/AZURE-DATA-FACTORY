@@ -1,0 +1,23 @@
+{
+	"name": "azure_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dataprojectDB",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"table": {
+				"type": "string"
+			},
+			"schema": {
+				"type": "string"
+			},
+			"column": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
