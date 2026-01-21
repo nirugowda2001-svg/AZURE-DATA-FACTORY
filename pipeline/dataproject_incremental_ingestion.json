@@ -68,7 +68,10 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "bronze",
-							"folder": "users",
+							"folder": {
+								"value": "@pipeline().parameters.table",
+								"type": "Expression"
+							},
 							"file": {
 								"value": "@concat(pipeline().parameters.table,'_',variables('current_date'))",
 								"type": "Expression"
@@ -131,10 +134,8 @@
 				}
 			},
 			{
-				"name": "If Condition1",
+				"name": "Ifincrementaldata",
 				"type": "IfCondition",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "AZURE_SQL_TO_DATALAKE",
