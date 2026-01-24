@@ -308,7 +308,6 @@
 					{
 						"activity": "Ifincrementaldata",
 						"dependencyConditions": [
-							"Succeeded",
 							"Failed"
 						]
 					}
