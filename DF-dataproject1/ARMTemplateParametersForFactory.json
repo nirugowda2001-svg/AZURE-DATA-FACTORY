@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "DF-dataproject1"
+		},
+		"DataProjectDatalake_accountKey": {
+			"value": ""
+		},
+		"dataprojectDB_password": {
+			"value": ""
+		},
+		"DataProjectDatalake_properties_typeProperties_url": {
+			"value": "https://dataprojectstore.dfs.core.windows.net/"
+		},
+		"dataprojectDB_properties_typeProperties_server": {
+			"value": "dataproject.database.windows.net"
+		},
+		"dataprojectDB_properties_typeProperties_database": {
+			"value": "DataProjectDB"
+		},
+		"dataprojectDB_properties_typeProperties_userName": {
+			"value": "adminniranjan"
+		}
+	}
+}
